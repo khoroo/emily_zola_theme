@@ -8,6 +8,30 @@
     line-height: 1.25rem;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 60px;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 1rem;
+    margin-left: auto; /* Push nav to the right */
+}
+
+#header-canvas {
+    height: 100%;
+    width: auto;
+    position: relative; /* Changed from absolute */
+    left: 0;
+    top: 0;
+}
 .no-underline {
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
