@@ -23,15 +23,19 @@
     align-items: flex-end;
     padding-left: 1rem;
     margin-left: auto; /* Push nav to the right */
+    flex-shrink: 0; /* Prevent nav from shrinking */
 }
 
 #header-canvas {
     height: 100%;
     width: auto;
-    position: relative; /* Changed from absolute */
+    position: relative;
     left: 0;
     top: 0;
+    flex-shrink: 1; /* Allow canvas to shrink */
+    max-width: 100%; /* Ensure it doesn't overflow */
 }
+
 .no-underline {
     -webkit-text-decoration-line: none;
     text-decoration-line: none;
